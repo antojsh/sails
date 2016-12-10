@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    nombre:{
+    nombres:{
         type:'string',
         required:true
     },
@@ -16,30 +16,37 @@ module.exports = {
         type:'string',
         required:true
     },
-    tipo_id:{
-        type:'string',
-        required:true
-    },
+    
     identificacion:{
         type:'integer',
         required:true
+    },
+    email:{
+        type:'string'
     },
     telefono:{
         type:'integer',
         required:true
     },
-    direccion:{
-        type:'string',
-        required:true
+    foto:{
+        type:'string'
     },
-    cobrador:{
-        model:'cobrador',
+    latitud:{
+        type:'float'
+    },
+    longitud:{
+        type:'float'
+    },
+    usuario:{
+        model:'usuario',
         required:true
     },
     prestamos:{
         collection: 'prestamo',
-        via:'cliente',
-        required:true
+        via:'cliente'
+    },
+    cuenta:{
+        model:'cuenta'
     }
 
   }

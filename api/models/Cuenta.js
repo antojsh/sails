@@ -1,5 +1,5 @@
 /**
- * Cobrador.js
+ * Cuenta.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -12,18 +12,6 @@ module.exports = {
         type:'string',
         required:true
     },
-    apellidos:{
-        type:'string',
-        required:true
-    },
-    tipo_id:{
-        type:'string',
-        required:true
-    },
-    identificacion:{
-        type:'integer',
-        required:true
-    },
     telefono:{
         type:'integer',
         required:true
@@ -32,15 +20,17 @@ module.exports = {
         type:'string',
         required:true
     },
-    usuario:{
-        model:'usuario',
+    descripcion:{
+        type:'string',
         required:true
     },
-    prestamos:{
-        collection: 'prestamo',
-        via:'cobrador',
-        required:true
-    }
+    usuario:{
+        model:'usuario'
+    },
+    clientes:{
+        collection: 'cliente',
+        via:'cuenta',
+    },
   }
 };
 

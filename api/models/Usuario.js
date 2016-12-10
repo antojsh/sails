@@ -18,6 +18,28 @@ module.exports = {
       required: 'true',
       unique: true // Yes unique one
     },
+    nombres:{
+      required:true,
+      type:'string'
+    },
+    apellidos:{
+      type:'string',
+      required:true
+    },
+    telefono:{
+      type:'integer',
+      required:true
+    },
+    cuentas:{
+        collection: 'cuenta',
+        via:'usuario',
+        required:true
+    },
+    clientes:{
+        collection: 'cliente',
+        via:'usuario',
+        required:true
+    },
 
     encryptedPassword: {
       type: 'string'
