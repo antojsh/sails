@@ -32,13 +32,11 @@ module.exports = {
     },
     cuentas:{
         collection: 'cuenta',
-        via:'usuario',
-        required:true
+        via:'usuario'
     },
     clientes:{
         collection: 'cliente',
-        via:'usuario',
-        required:true
+        via:'usuario'
     },
 
     encryptedPassword: {
