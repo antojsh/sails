@@ -7,7 +7,7 @@
 
 module.exports = {
 	create: function(req,res){
-        req.body.usuario= req.token
+        req.body.usuario= req.token.id
         Cuenta.create(req.body,function(err,cuenta){
             res.send(cuenta)
         })
