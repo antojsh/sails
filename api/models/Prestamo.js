@@ -16,9 +16,9 @@ module.exports = {
            model:'cliente',
            required:true 
         },
-        cobrador:{
-           model:'cobrador',
-           required:true 
+        usuario:{
+          model:'usuario',
+          required:true
         },
         tipo_plazo:{
             type:'string',
@@ -31,8 +31,11 @@ module.exports = {
         },
         pagos:{
             collection: 'pago',
-            via:'prestamo',
-            required:true
+            via:'prestamo'
+        },
+        activo:{
+          type:'boolean',
+          defaultsTo:true
         }
 
         

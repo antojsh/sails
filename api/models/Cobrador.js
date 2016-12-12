@@ -8,39 +8,7 @@
 module.exports = {
 
   attributes: {
-    nombre:{
-        type:'string',
-        required:true
-    },
-    apellidos:{
-        type:'string',
-        required:true
-    },
-    tipo_id:{
-        type:'string',
-        required:true
-    },
-    identificacion:{
-        type:'integer',
-        required:true
-    },
-    telefono:{
-        type:'integer',
-        required:true
-    },
-    direccion:{
-        type:'string',
-        required:true
-    },
-    usuario:{
-        model:'usuario',
-        required:true
-    },
-    prestamos:{
-        collection: 'prestamo',
-        via:'cobrador',
-        required:true
-    }
+   
   }
 };
 

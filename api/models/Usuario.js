@@ -38,6 +38,10 @@ module.exports = {
         collection: 'cliente',
         via:'usuario'
     },
+    prestamos:{
+        collection: 'prestamo',
+        via:'usuario'
+    },
 
     encryptedPassword: {
       type: 'string'
