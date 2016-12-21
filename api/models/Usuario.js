@@ -42,6 +42,10 @@ module.exports = {
         collection: 'prestamo',
         via:'usuario'
     },
+    posiciones:{
+        collection: 'posicion',
+        via:'usuario'
+    },
 
     encryptedPassword: {
       type: 'string'
